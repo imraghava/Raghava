@@ -1,6 +1,3 @@
-# imraghava.github.io
+# Raghava Personal Portfolio 
    
 
-Personal Portfolio
-
-Thank you. 
