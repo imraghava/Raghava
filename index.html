@@ -1,107 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raghava</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link  rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ2T00H2XY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>Raghava | Senior Full Stack Developer</title>
+  <meta name="description" content="Raghava – Senior Full Stack Developer specializing in .NET, Web APIs, SQL, and modern web technologies." />
 
-  gtag('config', 'G-XQ2T00H2XY');
-</script>
+  <!-- SEO / Social -->
+  <meta property="og:title" content="Raghava | Senior Full Stack Developer" />
+  <meta property="og:description" content="Clean, scalable full-stack solutions with modern web and backend technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://raghava.net/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Karla', sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      font-size: 1.5rem;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-3px);
+      color: #38bdf8;
+    }
+
+    .resume {
+      margin-top: 1.5rem;
+    }
+
+    .resume a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.7rem 1.2rem;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .resume a:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.3rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ2T00H2XY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XQ2T00H2XY');
+  </script>
 </head>
+
 <body>
+  <header>
+    <h1>Raghava</h1>
+    <p class="tagline">Code. Create. Break. Learn.</p>
 
+    <nav aria-label="Social links">
+      <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="mailto:imraghava@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </nav>
 
-  <!-- <audio id="audio" src="ad.mp3" ></audio> -->
-<div class="wrapper">
-  <div id="particles-js"></div>
-  <div class="section">
-    <div class="name">
-      <ul id="scene"
-      data-calibrate-x="false"
-      data-calibrate-y="false"
-      data-invert-x="true"
-      data-invert-y="true"
-      data-limit-x="false"
-      data-limit-y="false"
-      data-scalar-x="2"
-      data-scalar-y="2"
-      data-friction-x="0.1"
-      data-friction-y="0.1"
-      data-origin-x="0.0"
-      data-origin-y="0.0">
-      <p class="head layer" data-depth="1.0">Raghava</p>
-    </ul>
-
-      <ul id="scene1"
-      data-calibrate-x="false"
-      data-calibrate-y="false"
-      data-invert-x="false"
-      data-invert-y="true"
-      data-limit-x="false"
-      data-limit-y="false"
-      data-scalar-x="2"
-      data-scalar-y="2"
-      data-friction-x="0.1"
-      data-friction-y="0.1"
-      data-origin-x="0.0"
-      data-origin-y="0.0">
-      <p id="textdisp" class="text layer" data-depth="0.5">Code. Create. Break. Learn.</p>
-      </ul>
-      <ul id="scene2"
-      data-calibrate-x="false"
-      data-calibrate-y="false"
-      data-invert-x="false"
-      data-invert-y="true"
-      data-limit-x="false"
-      data-limit-y="false"
-      data-scalar-x="2"
-      data-scalar-y="2"
-      data-friction-x="0.1"
-      data-friction-y="0.1"
-      data-origin-x="0.0"
-      data-origin-y="0.0">
-      <div class="icons layer" data-depth="0.6">
-        <div class="ico"><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x fb"></i></a></div>
-        <div class="ico"><a href="https://github.com/"><i class="fa fa-github fa-2x git"></i></a></div>
-        <div class="ico"><a href="https://www.twitter.com/"><i class="fa fa-twitter fa-2x twit"></i></a></div>
-        <div class="ico"><a href="mailto:imraghava@gmail.com"><i class="fa fa-envelope fa-2x mail"></i></a></div>
-      </div>
-      <div class="resume">
-          <div class="ico-res"><a href="https://drive.google.com/file/d/1CeOy4iUZqK30xs8hN-0tWOlYQDxuIVT3/view?usp=sharing"><i class="fa fa-file-text fa-3x res"></i></a></div>
-      </div>
-    </ul>
+    <div class="resume">
+      <a href="https://drive.google.com/file/d/1CeOy4iUZqK30xs8hN-0tWOlYQDxuIVT3/view" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-file-lines"></i>
+        View Resume
+      </a>
     </div>
-  </div>
-</div>
+  </header>
 
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="js/particles.min.js"></script>
-  <script type="text/javascript" src="js/parallax-master/deploy/parallax.min.js"></script>
-  <script type="text/javascript" src="js/parallax-master/deploy/jquery.parallax.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/text-autotype.js" ></script>
-
-
- 
+  <footer>
+    © 2026 Raghava. All rights reserved.
+  </footer>
 </body>
-
 </html>
