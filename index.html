@@ -1,3 +1,8 @@
+Here is a complete, clean, animated version of your page with subtle professional motion, typing effect, animated gradient background, and smooth hover interactions. This keeps the senior engineer look while making the site feel modern and alive without being flashy.
+
+You can replace your entire file with this.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +27,6 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-  <!-- Styles -->
   <style>
     * {
       margin: 0;
@@ -32,17 +36,38 @@
 
     body {
       font-family: 'Karla', sans-serif;
-      background: #0f172a;
+      background: linear-gradient(-45deg, #0f172a, #020617, #0b1220, #020617);
+      background-size: 400% 400%;
+      animation: gradientMove 18s ease infinite;
       color: #e5e7eb;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
       text-align: center;
       padding: 2rem;
+      animation: fadeUp 1s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h1 {
@@ -50,12 +75,14 @@
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
+      letter-spacing: 1px;
     }
 
     .tagline {
       font-size: 1.2rem;
       opacity: 0.85;
       margin-bottom: 2rem;
+      min-height: 1.5em;
     }
 
     nav {
@@ -68,12 +95,13 @@
     nav a {
       color: #e5e7eb;
       font-size: 1.5rem;
-      transition: transform 0.2s ease, color 0.2s ease;
+      transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
     }
 
     nav a:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px) scale(1.1);
       color: #38bdf8;
+      text-shadow: 0 0 12px rgba(56,189,248,0.6);
     }
 
     .resume {
@@ -90,12 +118,13 @@
       text-decoration: none;
       border-radius: 6px;
       font-weight: 500;
-      transition: background 0.2s ease, color 0.2s ease;
+      transition: all 0.25s ease;
     }
 
     .resume a:hover {
       background: #38bdf8;
       color: #0f172a;
+      box-shadow: 0 0 20px rgba(56,189,248,0.5);
     }
 
     footer {
@@ -128,7 +157,7 @@
 <body>
   <header>
     <h1>Raghava</h1>
-    <p class="tagline">Code. Create. Break. Learn.</p>
+    <p class="tagline"></p>
 
     <nav aria-label="Social links">
       <a href="https://github.com/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
@@ -156,5 +185,25 @@
   <footer>
     © 2026 Raghava. All rights reserved.
   </footer>
+
+  <script>
+    const text = "Senior Full Stack Developer | Angular • .NET • Web API • SQL";
+    const tagline = document.querySelector(".tagline");
+    let index = 0;
+
+    function typeEffect() {
+      if (index < text.length) {
+        tagline.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 45);
+      }
+    }
+
+    typeEffect();
+  </script>
+
 </body>
 </html>
+```
+
+If you want next step, I can show how to add a second section (About + Skills) with scroll animations so the page feels like a complete senior portfolio instead of a landing screen.
